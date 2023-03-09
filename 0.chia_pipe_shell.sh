@@ -616,7 +616,7 @@ echo "$0 done" >> ${log_file}
 #### Annotate loops with peak support and call CCDs
 # Annotate loops
 be3_file="${run}.e500.clusters.cis.BE3"
-peak_file="${run}.for.BROWSER.spp.z6.broadPeak"
+peak_file="${run}.no_input_all_peaks.narrowPeak"
 
 ${dep_dir}/python ${bin_dir}/util/scripts/annotate_loops_with_peak_support.py \
     -l ${be3_file} -p ${peak_file}
