@@ -605,7 +605,7 @@ else
         # Call peaks using MACS2 with input control
         macs2 callpeak --keep-dup all --nomodel -t ${run}.for.BROWSER.bam \
             -c ${input_control} \
-            -f BAM -g hs -n ${run}.all 1>> ${log_file} 2>> ${log_file}
+            -f BAM -g dm -n ${run}.all 1>> ${log_file} 2>> ${log_file}
     fi
 fi
 
